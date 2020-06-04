@@ -1,0 +1,43 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px auto auto 100px;
+  grid-template-areas:
+  "topo topo"
+  "corpo l1"
+  "corpo l2"
+  "rodape rodape";
+  min-height: 100%;
+}
+
+.topo{
+  background-color: #E6E037;
+  grid-area: topo;
+}
+
+.corpo{
+  grid-area: corpo;
+}
+
+.l1{
+  color:#76C61B;
+  background-color: #333;
+  grid-area: l1;
+}
+
+.l2{
+  color:#4AC970;
+  background-color: #0F6157;
+  grid-area: l2;
+}
+
+.rodape{
+  background-color: #D32B2B;
+  grid-area: rodape;
+}
